@@ -1,7 +1,7 @@
 //Given a string s consisting of words and spaces, return the length of the last word in the string.
 //A word is a maximal substring consisting of non-space characters only.
 
- SOLUTION:
+//SOLUTION:
 
 class Solution {
     public int lengthOfLastWord(String s) {
@@ -21,3 +21,6 @@ class Solution {
     }
 }
 
+//This approach utilizes the split method to break the input string into an array of words based on spaces. 
+//Then, it iterates from the end of the array to find the last non-empty word and returns its length. 
+//If there are no non-empty words, it returns 0.

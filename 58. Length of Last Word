@@ -1,0 +1,31 @@
+//Given a string s consisting of words and spaces, return the length of the last word in the string.
+//A word is a maximal substring consisting of non-space characters only.
+
+//Solution:
+
+class Solution {
+    public int lengthOfLastWord(String s) {
+        // Trim the string to remove leading and trailing spaces
+        s = s.trim();
+
+        int length = 0;
+        for (int i = s.length() - 1; i >= 0; i--) {
+            // Iterate from the end of the string
+            // Count the characters until a space is encountered
+            if (s.charAt(i) != ' ') {
+                length++;
+            } else {
+                break; // Break the loop when a space is found
+            }
+        }
+
+        return length;
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        String input = "Given a string s consisting of words and spaces, return the length of the last word in the string.";
+        int length = solution.lengthOfLastWord(input);
+        System.out.println("Length of the last word: " + length);
+    }
+}

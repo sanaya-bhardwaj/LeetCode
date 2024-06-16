@@ -1,19 +1,15 @@
 # Welcome to My LeetCode Journey! 🚀
 This repository is my personal space for practicing and improving my coding skills through LeetCode challenges. It's a testament to my commitment to growth, problem-solving, and continuous learning.
 
-Why I'm Practicing LeetCode
+# Why I'm Practicing LeetCode
 LeetCode isn't just about solving coding problems; it's about building a strong foundation in algorithms and data structures, enhancing my problem-solving abilities, and preparing myself for the challenges of technical interviews. Each problem solved is a step towards becoming a more proficient and confident programmer.
 
-My Goals
+# My Goals
 Daily Practice: Solve at least one problem each day to build consistency.
 Understand Deeply: Focus on truly understanding each problem and its solution.
 Refine Skills: Regularly review and refactor my solutions to improve efficiency and readability.
 Track Progress: Use this repository to track my growth and celebrate milestones.
-Getting Started
-Clone the Repository: git clone https://github.com/myusername/leetcode-practice.git
-Pick a Problem: Select a problem from LeetCode to solve.
-Solve and Commit: Write the solution, test it thoroughly, and commit it to the repository.
-Review Regularly: Revisit past problems to reinforce learning and identify areas for improvement.
+
 Staying Motivated
 Inspirational Quotes
 "The only way to achieve the impossible is to believe it is possible."

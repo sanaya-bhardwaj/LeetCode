@@ -29,6 +29,7 @@ class Solution {
             // Update the maximum length found so far
             maxLength = Math.max(maxLength, right - left + 1);
         }
+        
         // Return the maximum length of the subarray that satisfies the condition
         return maxLength;
     }

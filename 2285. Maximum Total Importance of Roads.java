@@ -15,7 +15,6 @@ class Solution {
       ++count[v];
     }
     Arrays.sort(count);
-
     for (int i = 0; i < n; ++i)
       ans += (i + 1) * count[i];
     return ans;

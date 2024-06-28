@@ -8,7 +8,6 @@ class Solution {
   public long maximumImportance(int n, int[][] roads) {
     long ans = 0;
     long[] count = new long[n];
-
     for (int[] road : roads) {
       final int u = road[0];
       final int v = road[1];

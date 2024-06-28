@@ -15,7 +15,6 @@ class Solution {
       ++count[u];
       ++count[v];
     }
-
     Arrays.sort(count);
 
     for (int i = 0; i < n; ++i)

@@ -3,7 +3,6 @@
 //Return a list answer, where answer[i] is the list of ancestors of the ith node, sorted in ascending order.
 //A node u is an ancestor of another node v if u can reach v via a set of edges.
 
-
 class Solution {
     private int n;
     private List<Integer>[] g;

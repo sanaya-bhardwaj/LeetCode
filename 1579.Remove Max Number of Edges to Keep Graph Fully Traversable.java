@@ -1,4 +1,4 @@
-Alice and Bob have an undirected graph of n nodes and three types of edges:
+//Alice and Bob have an undirected graph of n nodes and three types of edges:
 
 Type 1: Can be traversed by Alice only.
 Type 2: Can be traversed by Bob only.

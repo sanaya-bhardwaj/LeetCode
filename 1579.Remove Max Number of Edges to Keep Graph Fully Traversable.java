@@ -7,7 +7,6 @@
 //The graph is fully traversed by Alice and Bob if starting from any node, they can reach all other nodes.
 //Return the maximum number of edges you can remove, or return -1 if Alice and Bob cannot fully traverse the graph.
 
-
 import java.util.Arrays;
 
 public class Solution {

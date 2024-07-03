@@ -1,4 +1,4 @@
-You are given an integer array nums.
+//You are given an integer array nums.
 
 In one move, you can choose one element of nums and change it to any value.
 

@@ -5,7 +5,6 @@
 //Return the head of the modified linked list.
 
 
-
 class Solution {
     public ListNode mergeNodes(ListNode head) {
         // Create a dummy node to act as the starting point of the new list

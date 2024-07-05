@@ -3,7 +3,7 @@
 //A node is a local minima if the current node has a value strictly smaller than the previous node and the next node.
 //Note that a node can only be a local maxima/minima if there exists both a previous node and a next node.
 //Given a linked list head, return an array of length 2 containing [minDistance, maxDistance] where minDistance is the minimum distance between any two distinct critical points and maxDistance is the maximum distance between any two distinct critical points. 
-If there are fewer than two critical points, return [-1, -1].
+//If there are fewer than two critical points, return [-1, -1].
 
 /**
  * Definition for singly-linked list.

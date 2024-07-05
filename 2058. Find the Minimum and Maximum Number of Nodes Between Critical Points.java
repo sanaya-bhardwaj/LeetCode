@@ -1,4 +1,4 @@
-A critical point in a linked list is defined as either a local maxima or a local minima.
+//A critical point in a linked list is defined as either a local maxima or a local minima.
 
 A node is a local maxima if the current node has a value strictly greater than the previous node and the next node.
 

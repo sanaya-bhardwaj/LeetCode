@@ -1,3 +1,4 @@
+
 class Solution {
   public int passThePillow(int n, int time) {
     // Repeat every (n - 1) * 2 seconds.

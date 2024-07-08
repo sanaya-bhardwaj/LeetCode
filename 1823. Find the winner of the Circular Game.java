@@ -9,7 +9,7 @@
 //The counting wraps around the circle and may count some friends more than once.
 //The last friend you counted leaves the circle and loses the game.
 //If there is still more than one friend in the circle, go back to step 2 starting from the friend immediately clockwise of the friend who just lost and repeat.
-Else, the last friend in the circle wins the game.
+//Else, the last friend in the circle wins the game.
 Given the number of friends, n, and an integer k, return the winner of the game.
 
 

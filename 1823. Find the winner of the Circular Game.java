@@ -12,7 +12,6 @@
 //Else, the last friend in the circle wins the game.
 //Given the number of friends, n, and an integer k, return the winner of the game.
 
-
 class Solution {
   public int findTheWinner(int n, int k) {
     // friends[i] := true if i-th friend is left

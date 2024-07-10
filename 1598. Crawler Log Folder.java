@@ -1,4 +1,4 @@
-The Leetcode file system keeps a log each time some user performs a change folder operation.
+//The Leetcode file system keeps a log each time some user performs a change folder operation.
 
 The operations are described below:
 

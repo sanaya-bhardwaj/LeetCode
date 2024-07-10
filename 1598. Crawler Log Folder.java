@@ -5,7 +5,6 @@
 "./" : Remain in the same folder.
 "x/" : Move to the child folder named x (This folder is guaranteed to always exist).
 You are given a list of strings logs where logs[i] is the operation performed by the user at the ith step.
-
 //The file system starts in the main folder, then the operations in logs are performed.
 //Return the minimum number of operations needed to go back to the main folder after the change folder operations.
 

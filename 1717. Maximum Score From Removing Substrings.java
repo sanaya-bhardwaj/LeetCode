@@ -2,7 +2,7 @@
 
 //Remove substring "ab" and gain x points.
 //For example, when removing "ab" from "cabxbae" it becomes "cxbae".
-Remove substring "ba" and gain y points.
+//Remove substring "ba" and gain y points.
 //For example, when removing "ba" from "cabxbae" it becomes "cabxe".
 Return the maximum points you can gain after applying the above operations on s.
 

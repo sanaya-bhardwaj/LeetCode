@@ -1,4 +1,4 @@
-You are given a string s and two integers x and y. You can perform two types of operations any number of times.
+//You are given a string s and two integers x and y. You can perform two types of operations any number of times.
 
 Remove substring "ab" and gain x points.
 For example, when removing "ab" from "cabxbae" it becomes "cxbae".

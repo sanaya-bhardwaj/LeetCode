@@ -9,7 +9,7 @@
 
 //Your task is to determine the health of the robots that survive the collisions, in the same order that the robots were given, i.e. final heath of robot 1 (if survived), final health of robot 2 (if survived), and so on. If there are no survivors, return an empty array.
 
-Return an array containing the health of the remaining robots (in the order they were given in the input), after no further collisions can occur.
+//Return an array containing the health of the remaining robots (in the order they were given in the input), after no further collisions can occur.
 
 Note: The positions may be unsorted.
 

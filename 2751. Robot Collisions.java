@@ -1,4 +1,4 @@
-There are n 1-indexed robots, each having a position on a line, health, and movement direction.
+//There are n 1-indexed robots, each having a position on a line, health, and movement direction.
 
 You are given 0-indexed integer arrays positions, healths, and a string directions (directions[i] is either 'L' for left or 'R' for right). All integers in positions are unique.
 

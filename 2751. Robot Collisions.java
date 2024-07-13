@@ -9,8 +9,6 @@
 //Return an array containing the health of the remaining robots (in the order they were given in the input), after no further collisions can occur.
 //Note: The positions may be unsorted.
 
-
-
 class Robot {
   public int index;
   public int position;

@@ -1,4 +1,4 @@
-Given a string formula representing a chemical formula, return the count of each atom.
+//Given a string formula representing a chemical formula, return the count of each atom.
 
 The atomic element always starts with an uppercase character, then zero or more lowercase letters, representing the name.
 

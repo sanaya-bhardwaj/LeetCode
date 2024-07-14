@@ -1,5 +1,5 @@
 //Given a string formula representing a chemical formula, return the count of each atom.
-The atomic element always starts with an uppercase character, then zero or more lowercase letters, representing the name.
+//The atomic element always starts with an uppercase character, then zero or more lowercase letters, representing the name.
 
 One or more digits representing that element's count may follow if the count is greater than 1. If the count is 1, no digits will follow.
 

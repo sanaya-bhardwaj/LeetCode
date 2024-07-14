@@ -4,7 +4,7 @@
 //For example, "H2O" and "H2O2" are possible, but "H1O2" is impossible.
 //Two formulas are concatenated together to produce another formula.
 //For example, "H2O2He3Mg4" is also a formula.
-A formula placed in parentheses, and a count (optionally added) is also a formula.
+//A formula placed in parentheses, and a count (optionally added) is also a formula.
 
 For example, "(H2O2)" and "(H2O2)3" are formulas.
 

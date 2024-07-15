@@ -2,8 +2,7 @@
 //If isLefti == 1, then childi is the left child of parenti.
 //If isLefti == 0, then childi is the right child of parenti.
 //Construct the binary tree described by descriptions and return its root.
-
-The test cases will be generated such that the binary tree is valid.
+//The test cases will be generated such that the binary tree is valid.
 
 class Solution {
   public TreeNode createBinaryTree(int[][] descriptions) {

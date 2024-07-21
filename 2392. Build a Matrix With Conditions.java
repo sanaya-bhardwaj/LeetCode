@@ -9,60 +9,68 @@
 //Return any matrix that satisfies the conditions. If no answer exists, return an empty matrix.
 
 class Solution {
-  public int[][] buildMatrix(int k, int[][] rowConditions, int[][] colConditions) {
-    List<Integer> rowOrder = topologicalSort(rowConditions, k);
-    if (rowOrder.isEmpty())
-      return new int[][] {};
+    public int[][] buildMatrix(int k, int[][] rowConditions, int[][] colConditions) {
+        List<Integer> row_sorting = topo_sort(rowConditions, k);
+        List<Integer> col_sorting = topo_sort(colConditions, k);
+        if (row_sorting.isEmpty() || col_sorting.isEmpty())
+            return new int[0][0];
 
-    List<Integer> colOrder = topologicalSort(colConditions, k);
-    if (colOrder.isEmpty())
-      return new int[][] {};
+        Map<Integer, int[]> value_position = new HashMap<>();
+        for (int n = 1; n <= k; ++n) {
+            value_position.put(n, new int[2]);  // element -> [row_index, col_index]
+        }
+        for (int ind = 0; ind < row_sorting.size(); ++ind) {
+            value_position.get(row_sorting.get(ind))[0] = ind;
+        }
+        for (int ind = 0; ind < col_sorting.size(); ++ind) {
+            value_position.get(col_sorting.get(ind))[1] = ind;
+        }
 
-    int[][] ans = new int[k][k];
-    int[] nodeToRowIndex = new int[k + 1];
+        int[][] res = new int[k][k];
+        for (int value = 1; value <= k; ++value) {
+            int row = value_position.get(value)[0];
+            int column = value_position.get(value)[1];
+            res[row][column] = value;
+        }
 
-    for (int i = 0; i < k; ++i)
-      nodeToRowIndex[rowOrder.get(i)] = i;
-
-    for (int j = 0; j < k; ++j) {
-      final int node = colOrder[j];
-      final int i = nodeToRowIndex[node];
-      ans[i][j] = node;
+        return res;
     }
 
-    return ans;
-  }
+    // return True if all okay and return False if cycle was found
+    private boolean dfs(int src, Map<Integer, List<Integer>> graph, Set<Integer> visited, Set<Integer> cur_path, List<Integer> res) {
+        if (cur_path.contains(src)) return false;  // cycle detected
+        if (visited.contains(src)) return true;  // all okay, but we've already visited this node
 
-  private List<Integer> topologicalSort(int[][] conditions, int n) {
-    List<Integer> order = new ArrayList<>();
-    List<Integer>[] graph = new List[n + 1];
-    int[] inDegrees = new int[n + 1];
-    Queue<Integer> q = new ArrayDeque<>();
+        visited.add(src);
+        cur_path.add(src);
 
-    for (int i = 1; i <= n; ++i)
-      graph[i] = new ArrayList<>();
+        for (int neighbor : graph.getOrDefault(src, Collections.emptyList())) {
+            if (!dfs(neighbor, graph, visited, cur_path, res))  // if any child returns false
+                return false;
+        }
 
-    // Build the graph.
-    for (int[] condition : conditions) {
-      final int u = condition[0];
-      final int v = condition[1];
-      graph[u].add(v);
-      ++inDegrees[v];
+        cur_path.remove(src);  // backtrack path
+        res.add(src);
+        return true;
     }
 
-    // Perform topological sorting.
-    for (int i = 1; i <= n; ++i)
-      if (inDegrees[i] == 0)
-        q.offer(i);
+    // if there will be cycle - return empty array, in other case return 1d array as described above
+    private List<Integer> topo_sort(int[][] edges, int k) {
+        Map<Integer, List<Integer>> graph = new HashMap<>();
+        for (int[] edge : edges) {
+            graph.computeIfAbsent(edge[0], x -> new ArrayList<>()).add(edge[1]);
+        }
 
-    while (!q.isEmpty()) {
-      final int u = q.poll();
-      order.add(u);
-      for (final int v : graph[u])
-        if (--inDegrees[v] == 0)
-          q.offer(v);
+        Set<Integer> visited = new HashSet<>();
+        Set<Integer> cur_path = new HashSet<>();
+        List<Integer> res = new ArrayList<>();
+
+        for (int src = 1; src <= k; ++src) {
+            if (!dfs(src, graph, visited, cur_path, res))
+                return Collections.emptyList();
+        }
+
+        Collections.reverse(res);  // we will have res as reversed so we need to reverse it one more time
+        return res;
     }
-
-    return order.size() == n ? order : new ArrayList<>();
-  }
 }

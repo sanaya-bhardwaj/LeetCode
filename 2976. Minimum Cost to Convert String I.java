@@ -3,8 +3,7 @@
 //You start with the string source. In one operation, you can pick a character x from the string and change it to the character y at a cost of z if there exists any index j such that cost[j] == z, original[j] == x, and changed[j] == y.
 //Return the minimum cost to convert the string source to the string target using any number of operations. 
 //If it is impossible to convert source to target, return -1.
-
-Note that there may exist indices i, j such that original[j] == original[i] and changed[j] == changed[i].
+//Note that there may exist indices i, j such that original[j] == original[i] and changed[j] == changed[i].
 
 class Solution {
     public long minimumCost(String source, String target, char[] original, char[] changed, int[] cost) {

@@ -6,11 +6,9 @@
 //The second minimum value is defined as the smallest value strictly larger than the minimum value.
 //For example the second minimum value of [2, 3, 4] is 3, and the second minimum value of [2, 2, 4] is 4.
 //Given n, edges, time, and change, return the second minimum time it will take to go from vertex 1 to vertex n.
-
-Notes:
-
-You can go through any vertex any number of times, including 1 and n.
-You can assume that when the journey starts, all signals have just turned green.
+//Notes:
+//You can go through any vertex any number of times, including 1 and n.
+//You can assume that when the journey starts, all signals have just turned green.
 
 class Solution {
     public int secondMinimum(int n, int[][] edges, int time, int change) {

@@ -2,14 +2,15 @@
 //If a string is longer than the other, append the additional letters onto the end of the merged string.
 //Return the merged string.
 
-Approach 1: Brute Force Approach
+//Approach 1: Brute Force Approach
 
-Iterate through both strings and concatenate characters alternately to a result string. This method involves direct string concatenation, which can be inefficient.
+//Iterate through both strings and concatenate characters alternately to a result string. 
+//This method involves direct string concatenation, which can be inefficient.
 
-Time complexity: O(n^2)
-Space complexity: O(n)
+//Time complexity: O(n^2)
+//Space complexity: O(n)
 
-Code:
+//Code:
 
 class Solution {
    public String mergeAlternately(String word1, String word2) {
@@ -30,14 +31,16 @@ class Solution {
        return result;
    }
 }
-Approach 2: Using StringBuilder
 
-Using StringBuilder is more efficient for string manipulation since it allows appending characters in constant time. This approach builds the merged string in a more optimal way compared to direct string concatenation.
+//Approach 2: Using StringBuilder
 
-Time complexity: O(n)
-Space complexity: O(n)
+//Using StringBuilder is more efficient for string manipulation since it allows appending characters in constant time. 
+//This approach builds the merged string in a more optimal way compared to direct string concatenation.
 
-Code
+//Time complexity: O(n)
+//Space complexity: O(n)
+
+//Code
 
 class Solution {
     public String mergeAlternately(String word1, String word2) {
@@ -58,14 +61,16 @@ class Solution {
         return result.toString();
     }
 }
-Approach 3: Two-pointers Approach
 
-Using two pointers to iterate through both strings simultaneously is the most efficient approach. This method ensures that each character is processed only once, and the pointers help in managing the traversal of both strings.
+//Approach 3: Two-pointers Approach
 
-Time complexity: O(n)
-Space complexity: O(n)
+//Using two pointers to iterate through both strings simultaneously is the most efficient approach. 
+//This method ensures that each character is processed only once, and the pointers help in managing the traversal of both strings.
 
-Code:
+//Time complexity: O(n)
+//Space complexity: O(n)
+
+//Code:
 
 class Solution {
     public String mergeAlternately(String word1, String word2) {

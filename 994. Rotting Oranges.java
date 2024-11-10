@@ -8,19 +8,19 @@
 //Return the minimum number of minutes that must elapse until no cell has a fresh orange. If this is impossible, return -1.
 
 
-Approach for this Problem:
-Create a visited grid to store the state of the cell (fresh, rotten, or empty).
-Initialize a queue to store the rotten oranges and count the number of fresh oranges.
-Check if there are no fresh oranges, return 0, or if there are no rotten oranges, return -1.
-Loop while the queue is not empty.
-a. Store the size of the queue.
-b. Loop through the size of the queue.
-i. Get the front cell of the queue.
-ii. Check all four directions of the cell to see if there are any fresh oranges.
-iii. If there is a fresh orange, change its state to rotten and decrement the count of fresh oranges, and push the cell into the queue.
-c. Increment the minutes.
-If there are no fresh oranges, return the minutes.
-If there are still fresh oranges, return -1.
+//Approach for this Problem:
+//Create a visited grid to store the state of the cell (fresh, rotten, or empty).
+//Initialize a queue to store the rotten oranges and count the number of fresh oranges.
+//Check if there are no fresh oranges, return 0, or if there are no rotten oranges, return -1.
+//Loop while the queue is not empty.
+//a. Store the size of the queue.
+//b. Loop through the size of the queue.
+//i. Get the front cell of the queue.
+//ii. Check all four directions of the cell to see if there are any fresh oranges.
+//iii. If there is a fresh orange, change its state to rotten and decrement the count of fresh oranges, and push the cell into the queue.
+//c. Increment the minutes.
+//If there are no fresh oranges, return the minutes.
+//If there are still fresh oranges, return -1.
 
 
 class Solution {

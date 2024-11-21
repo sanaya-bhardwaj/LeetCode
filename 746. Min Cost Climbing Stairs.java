@@ -3,6 +3,12 @@
 //You can either start from the step with index 0, or the step with index 1.
 //Return the minimum cost to reach the top of the floor.
 
+//Approach : bottom-up approach
+
+//Complexity : Time complexity: O(n)
+
+//Space complexity: O(n)
+
 class Solution {
     public int minCostClimbingStairs(int[]cost){
         int [] dp=new int[cost.length];

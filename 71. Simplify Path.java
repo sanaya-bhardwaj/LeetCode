@@ -9,7 +9,7 @@
 //Any sequence of periods that does not match the rules above should be treated as a valid directory or file name. For example, '...' and '....' are valid directory or file names.
 //The simplified canonical path should follow these rules:
 
-The path must start with a single slash '/'.
+//The path must start with a single slash '/'.
 Directories within the path must be separated by exactly one slash '/'.
 The path must not end with a slash '/', unless it is the root directory.
 The path must not have any single or double periods ('.' and '..') used to denote current or parent directories.

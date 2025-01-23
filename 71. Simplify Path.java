@@ -7,7 +7,7 @@
 //A double period '..' represents the previous/parent directory.
 //Multiple consecutive slashes such as '//' and '///' are treated as a single slash '/'.
 //Any sequence of periods that does not match the rules above should be treated as a valid directory or file name. For example, '...' and '....' are valid directory or file names.
-The simplified canonical path should follow these rules:
+//The simplified canonical path should follow these rules:
 
 The path must start with a single slash '/'.
 Directories within the path must be separated by exactly one slash '/'.

@@ -6,7 +6,7 @@
 
 //An integer number followed by an optional exponent.
 //A decimal number followed by an optional exponent.
-An integer number is defined with an optional sign '-' or '+' followed by digits.
+//An integer number is defined with an optional sign '-' or '+' followed by digits.
 
 A decimal number is defined with an optional sign '-' or '+' followed by one of the following definitions:
 

@@ -13,7 +13,7 @@
 //Digits followed by a dot '.'.
 Digits followed by a dot '.' followed by digits.
 A dot '.' followed by digits.
-An exponent is defined with an exponent notation 'e' or 'E' followed by an integer number.
+//An exponent is defined with an exponent notation 'e' or 'E' followed by an integer number.
 
 //The digits are defined as one or more digits.
 

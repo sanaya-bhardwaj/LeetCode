@@ -4,7 +4,7 @@
 
 //Formally, a valid number is defined using one of the following definitions:
 
-An integer number followed by an optional exponent.
+//An integer number followed by an optional exponent.
 A decimal number followed by an optional exponent.
 An integer number is defined with an optional sign '-' or '+' followed by digits.
 

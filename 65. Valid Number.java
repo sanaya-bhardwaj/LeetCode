@@ -10,7 +10,7 @@
 
 //A decimal number is defined with an optional sign '-' or '+' followed by one of the following definitions:
 
-Digits followed by a dot '.'.
+//Digits followed by a dot '.'.
 Digits followed by a dot '.' followed by digits.
 A dot '.' followed by digits.
 An exponent is defined with an exponent notation 'e' or 'E' followed by an integer number.

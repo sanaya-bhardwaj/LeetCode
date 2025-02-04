@@ -1,4 +1,4 @@
-An n-bit gray code sequence is a sequence of 2n integers where:
+//An n-bit gray code sequence is a sequence of 2n integers where:
 
 Every integer is in the inclusive range [0, 2n - 1],
 The first integer is 0,

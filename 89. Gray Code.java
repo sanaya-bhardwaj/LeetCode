@@ -3,5 +3,5 @@
 //The first integer is 0,
 //An integer appears no more than once in the sequence,
 //The binary representation of every pair of adjacent integers differs by exactly one bit, and
-The binary representation of the first and last integers differs by exactly one bit.
+//The binary representation of the first and last integers differs by exactly one bit.
 Given an integer n, return any valid n-bit gray code sequence.

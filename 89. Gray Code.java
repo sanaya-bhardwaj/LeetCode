@@ -1,6 +1,5 @@
 //An n-bit gray code sequence is a sequence of 2n integers where:
-
-Every integer is in the inclusive range [0, 2n - 1],
+//Every integer is in the inclusive range [0, 2n - 1],
 The first integer is 0,
 An integer appears no more than once in the sequence,
 The binary representation of every pair of adjacent integers differs by exactly one bit, and

@@ -2,7 +2,6 @@
 //There is only one repeated number in nums, return this repeated number.
 //You must solve the problem without modifying the array nums and uses only constant extra space.
 
-
 class Solution {
   public int findDuplicate(int[] nums) {
     int slow = nums[nums[0]];

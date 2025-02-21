@@ -5,7 +5,7 @@
 //The remaining elements of nums are not important as well as the size of nums.
 //Return k.
 
-//SOLUTION:
+
 class Solution {
     public int removeDuplicates(int[] nums) {
         if (nums.length == 0) {

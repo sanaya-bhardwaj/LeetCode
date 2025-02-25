@@ -3,7 +3,6 @@
 //'*' Matches zero or more of the preceding element.
 //The matching should cover the entire input string (not partial).
 
-
 class Solution {
     int[][] t;
 

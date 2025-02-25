@@ -2,6 +2,7 @@
 //If target is not found in the array, return [-1, -1].
 //You must write an algorithm with O(log n) runtime complexity.
 
+
 class Solution {
     public int[] searchRange(int[] nums, int target) {
         int j=0;

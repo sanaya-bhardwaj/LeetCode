@@ -4,7 +4,7 @@
 //After performing all the operations, shift all the 0's to the end of the array.
 //For example, the array [1,0,2,0,0,1] after shifting all its 0's to the end, is [1,2,1,0,0,0].
 //Return the resulting array.
-Note that the operations are applied sequentially, not all at once.
+//Note that the operations are applied sequentially, not all at once.
 
   class Solution {
     public int[] applyOperations(int[] nums) {

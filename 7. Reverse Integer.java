@@ -14,3 +14,18 @@ class Solution {
         return rev;
     }
 }
+
+class Solution {
+    public int reverse(int x) {
+        int revN=0, lastdigit;
+        while(x!=0){
+            if(revN != revN * 10 / 10)
+                return 0;
+            lastdigit=x%10;
+            x=x/10;
+            revN=(revN*10)+lastdigit;
+            
+        }
+        return revN;
+    }
+}

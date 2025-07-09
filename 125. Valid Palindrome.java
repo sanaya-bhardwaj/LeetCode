@@ -8,3 +8,20 @@ class Solution {
         return cleanStr.equals(new StringBuilder(cleanStr).reverse().toString());
     }
 }
+
+
+class Solution {
+    String str;
+
+    public boolean isPalindrome(String s) {
+        str = s.toLowerCase().replaceAll("[^a-z0-9]", "");
+        return f(0);
+    }
+
+    private boolean f(int i) {
+        int j = str.length() - 1 - i;
+        if (i >= j) return true;
+        if (str.charAt(i) != str.charAt(j)) return false;
+        return f(i + 1);
+    }
+}

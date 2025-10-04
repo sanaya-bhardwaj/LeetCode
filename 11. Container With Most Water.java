@@ -4,11 +4,13 @@
 //Notice that you may not slant the container.
 
 //Intuition:
+
 //The two-pointer technique starts with the widest container and moves the pointers inward based on the comparison of heights.
 //Increasing the width of the container can only lead to a larger area if the height of the new boundary is greater. 
 //By moving the pointers towards the center, we explore containers with the potential for greater areas.
 
 //Explanation:
+
 //Initialize the variables:
 
 //left to represent the left pointer, starting at the beginning of the container (index 0).
@@ -21,6 +23,7 @@
 //Use the min function to find the minimum height between the left and right pointers.
 //Multiply the minimum height by the width, which is the difference between the indices of the pointers: (right - left).
 //Store this value in the currentArea variable.
+
 //Update the maximum area:
 
 //Use the max function to compare the currentArea with the maxArea.
@@ -35,6 +38,7 @@
 //Return the maxArea, which represents the maximum area encountered among all the containers.
 
 //Update the maximum area:
+
 //The purpose of this condition is to determine which pointer to move inward, either the left pointer (i) or the right pointer (j), based on the comparison of heights at their respective positions.
 //Imagine you have two containers represented by the heights at the left and right pointers. 
 //The condition checks which container has a smaller height and moves the pointer corresponding to that container.
@@ -44,6 +48,7 @@
 //This means that the height of the left container is greater than the height of the right container.
 //Moving the right pointer (j) would not increase the potential area because the height of the right container is the limiting factor.
 //So, to explore containers with the possibility of greater areas, we need to move the right pointer inward by decrementing j.
+
 //If height[i] <= height[j]:
 
 //This means that the height of the left container is less than or equal to the height of the right container.

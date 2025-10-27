@@ -5,6 +5,7 @@
 //Laser beams are independent, i.e., one beam does not interfere nor join with another.
 //Return the total number of laser beams in the bank.
 
+
 class Solution {
     public int numberOfBeams(String[] bank) {
         if (bank == null || bank.length == 0) {

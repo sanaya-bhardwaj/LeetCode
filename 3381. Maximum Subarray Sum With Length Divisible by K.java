@@ -1,0 +1,19 @@
+//You are given an array of integers nums and an integer k.
+//Return the maximum sum of a subarray of nums, such that the size of the subarray is divisible by k.
+
+class Solution {
+    public long maxSubarraySum(int[] nums, int k) {
+        final long n=nums.length, INF=Long.MAX_VALUE/2;
+        long [] minS=new long[k];
+        for(int i=0; i<k-1; i++) minS[i]=INF;
+        minS[k-1]=0;
+        long prefix=0, ans=-INF;
+        for(int i=0; i<n; i++){
+            prefix+=nums[i];
+            int ik=i%k;
+            ans=Math.max(ans, prefix-minS[ik]);
+            minS[ik]=Math.min(prefix, minS[ik]);  
+        }
+        return ans;
+    }
+}

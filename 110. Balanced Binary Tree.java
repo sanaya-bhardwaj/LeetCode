@@ -1,4 +1,4 @@
-//Given a binary tree, determine if it is height-balanced.
+/*Given a binary tree, determine if it is height-balanced.*/
 
 /**
  * Definition for a binary tree node.

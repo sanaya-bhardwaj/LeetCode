@@ -18,6 +18,7 @@ class Solution {
 }
 
 //Optimal Solution
+
 class Solution {
     public int subarraySum(int[] nums, int k) {
         // Size of the array
